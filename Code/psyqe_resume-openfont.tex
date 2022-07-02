@@ -1,0 +1,347 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{psyqe-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Shaunak}{Guha}{ 
+\urlstyle{same}
+\faIcon{laptop-code} \ Research Scientist \ 
+\ \faIcon[regular]{calendar-alt} \ 24 years
+\\
+%\href{https://www.linkedin.com/in/shaunakguha/}{ LinkedIn/shaunakguha } \ | \
+
+\faIcon[regular]{envelope} \href{mailto:mr.shaunakguha@gmail.com}{ mr.shaunakguha@gmail.com } \ 
+\faIcon{map-marker-alt} \ Kolkata, India
+
+}
+\vspace{1pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.34\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+%Facebook:// \href{https://facebook/dd}{\bf dd} \\
+\faIcon{linkedin} \ LinkedIn://\href{https://www.linkedin.com/in/shaunakguha}{\bf shaunakguha} \\
+\faIcon{researchgate} \ ResearchGate://\href{https://www.researchgate.net/profile/Shaunak-Guha}{\bf Shaunak-Guha} \\
+\faIcon{github} \ Github://\href{https://github.com/psyqe}{\bf psyqe} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+\vspace{-3pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{M.Sc. in Physics}
+\descript{St. Xavier's College, Kolkata}
+University of Calcutta \\
+\location{Division : First Class} 
+\location{Nov 2020 | CGPA : 7.42 / 10}
+\vspace{4pt}
+\sectionsep
+
+%\subsection{B.Sc. in Physics\fontspec[Path = fonts/raleway/]{Raleway-Medium} \fontsize{13pt}{14pt} \selectfont{( Honours )}}
+\subsection{B.Sc. in Physics \sffamily{( Honours )}}
+\descript{St. Xavier's College, Kolkata}
+University of Calcutta \\
+\location{Division : First Class}
+\location{ July 2018 | CGPA : 6.79 / 10}
+\vspace{4pt}
+\sectionsep
+
+\subsection{ISC (Class 12)}
+\descript{St. Joseph's College, Kolkata}
+Council for the Indian School Certificate Examinations \\
+\location{June 2015 |  Score : 95.75 \%}
+\vspace{4pt}
+\sectionsep
+
+\subsection{ICSE (Class 10)}
+\descript{St. Joseph's College, Kolkata}
+Council for the Indian School Certificate Examinations \\
+\location{June 2013 |  Score : 91.4 \%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+%\subsection{Programming}
+\location{Programming}
+\vspace{1pt}
+\textbullet{} Java \textbullet{} Python \textbullet{} C++ \textbullet{}
+Assembly \textbullet{} \\
+\textbullet{} Matlab \textbullet{} SQL \textbullet{} \LaTeX\ \textbullet{} Bash/Shell \textbullet{} \\
+\vspace{4pt}
+\location{Soft Skills}
+\vspace{1pt}
+\textbullet{} Fast learner \textbullet{} Organized workflow \textbullet{} \\
+\textbullet{} Open minded \textbullet{} Adaptive \textbullet{} Curious \textbullet{} \\
+\vspace{4pt}
+\location{Disciplines}
+\vspace{1pt}
+\textbullet{} Nanotechnology \textbullet{} Electronics \textbullet{} \\
+\textbullet{} Solid state physics \textbullet{} Analytics \textbullet{} \\
+\vspace{4pt}
+\location{Languages}
+\begin{tabular}{llc}
+\vspace{-8pt} \\
+\textbullet{} \textbf{English} & - & 4.5 / 5 \\
+\textbullet{} \textbf{Bengali} & - & 4.5 / 5 \\
+\textbullet{} \textbf{Hindi} & - & 4.0 / 5 \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Prophecy Sensorlytics}
+\descript{| \ Research Scientist }
+\location{December 2021 – Present \  | \ Kolkata, India \ | \ 7 months}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Interdisciplinary and collaborative R\&D on sensor design using materials  engineering, circuit modelling, data science \&  UI/UX of final product
+\item A typical work week includes sensor prototyping, characterisation, device testing \& improvisation, data analysis, firmware \& middleware revision, up-scaling for fabrication, production planning and project management 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Chegg Inc.}
+\descript{\hspace{-2pt}| \ Advanced Physics Expert }
+\location{March 2021 – Present \ | \ Part-time }
+\begin{tightemize}
+\item Solved problems \& doubts on topics from high-school and undergraduate physics, mathematics and computer science.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research \& Projects}
+\runsubsection{Indian Association for the Cultivation of Science \\ ( IACS, Kolkata )}
+\descript{| \ Research Consultant}
+\location{February 2021 - August 2021 \ | \ Kolkata, India}
+\begin{tightemize}
+\item  Designed and programmed a stable and configurable DC supply tool for characterisation and routine testing of solid-state electrochromic device prototypes in the lab of \textbf{\href{http://iacs.res.in/faculty-profile.html?id=112}{Prof. Subhadeep Datta}} and \textbf{\href{http://iacs.res.in/faculty-profile.html?id=68}{Prof. Sudip Malik}}
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{St. Xavier's College, Kolkata}
+\descript{| \ Master's Dissertation}
+\location{July 2019 - March 2020 \ | \ Kolkata, India}
+\begin{tightemize}
+\item Fabricated CZTS thin films using SILAR for use as thin film solar cells and studied their active surface using SEM-EDX to analyze ion adsorption \cite{Guha2021}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Indian Institute of Technology (IIT), Bombay}
+\descript{| \ Internship}
+\location{June 2019 \ | \ Mumbai, India}
+\begin{tightemize}
+\item Participated in FOSSEE (Free/Libre Open Source Software for Education) Summer Fellowship 2019 in the Arduino domain
+\item Created a 2-player pingpong game that can be played on a 16x2 LCD
+\item Published an online simulation on Autodesk TinkerCAD \textbf{\href{https://www.tinkercad.com/things/cL2SogHJobn?sharecode=Nf75LAH15eyD5xEGsSbnSdjyj0kpy9A-UC08TDohg8E}{[Link]}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{St. Xavier's College, Kolkata}
+\descript{| \ Bachelor's Dissertation}
+\location{October 2017 - April 2018 \ | \ Kolkata , India}
+\begin{tightemize}
+\item Using motion tracking, studied the movement of a levitating oscillator to estimate parameters of a hypothetical empirical formula using curve fitting
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ramakrishna Mission Vivekananda Educational and Research Institute \ ( RKMVERI )} 
+\descript{| \ Research Consultant}
+\location{2017 - 2018 \ | \ Howrah, India}
+\begin{tightemize}
+\item Developed a room-wide Arduino-controlled training setup that trains and tracks progress of directional auditory perception of visually impaired people \cite{Prasad2019}. Successful trials in local schools for blind children.
+\item IP accepted \textbf{\href{https://search.ipindia.gov.in/DesignApplicationStatus}{(Design No.: 305795)}} and published in the Official Journal of the Patent Office, Govt. of India \textbf{\href{https://search.ipindia.gov.in/IPOJournal/Journal/Patent}{(Journal No.: 27/2019, Pg. 28999)}} \cite{Design2019}
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     PAGE TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.34\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+
+\section{Tests}
+\begin{tabular}{rll}
+%    2022 & \textbf{GRE} & Score : 320 \\
+%    2022 & \textbf{TOEFL} & Score : 100 \\
+%    2022 & \textbf{IELTS} & Score : 8.5 \\
+    2021 & \textbf{GATE} (Physics) & Rank : 2050 \\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     REFEREES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Referees}
+
+\location{\textcolor{primary}{Dr. Kallol Mohanta}}
+Senior Research Scientist \& Team Lead \\
+\faIcon{university} \ Prophecy Sensorlytics Pvt Ltd \\
+\faIcon[regular]{envelope} \ 
+\href{mailto:kmohanta@gmail.com}{\textit{kmohanta@gmail.com}}
+
+\sectionsep
+
+\location{\textcolor{primary}{Prof. Gayatri Banerjee}}
+Assitant Professor \\
+\faIcon{university} \ St. Xavier's College, Kolkata \\
+\faIcon[regular]{envelope}  \  \href{mailto:gayatri_banerjee@sxccal.edu}{\textit{gayatri\_banerjee@sxccal.edu}}
+
+\sectionsep
+
+\location{\textcolor{primary}{Prof. Aditi Ghosh}}
+Assistant Professor \\
+\faIcon{university} \ St. Xavier's College, Kolkata \\
+\faIcon[regular]{envelope} \ 
+\href{mailto:aditi@sxccal.edu}{\textit{aditi@sxccal.edu}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.64\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications \& Patents} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{is-abbrv}
+\bibliography{publications}
+\nocite{*}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Solid State Electronics, 
+Nanomaterials, Quantum Physics, 
+VLSI, Digital Signal Processing, $\mu$c-$\mu$p Architecture, Open Source Computing, Group Theory, Optoelectronics, Communication Theory, Computational Physics  | \href{https://www.sxccal.edu/wp-content/uploads/2019/12/MSc-PhysicsSyllabus2014.pdf}{\bfseries Course Link}
+\sectionsep
+
+\subsection{Undergraduate}
+Statistical \& Quantum Mechanics, Non-linear Dynamics, Chaos Theory, Electrostatics \& Electrodynamics, Electrical Circuits, RDBMS,  | \href{https://www.sxccal.edu/wp-content/uploads/2020/01/BscPhysicsHonsSyllabus.pdf}{\bfseries Course Link}
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
